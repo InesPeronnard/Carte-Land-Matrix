@@ -1,0 +1,22 @@
+<layer>
+  <name>deals_by_country</name>
+  <id>LayerInfoImpl-468ec584:19ad920f034:-7fe1</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl-468ec584:19ad920f034:-7fd2</id>
+  </defaultStyle>
+  <styles class="linked-hash-set">
+    <style>
+      <id>StyleInfoImpl--6a77b788:19ab5d15586:-7ffe</id>
+    </style>
+  </styles>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-468ec584:19ad920f034:-7fe2</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2025-12-01 10:06:58.763 UTC</dateCreated>
+  <dateModified>2025-12-01 10:27:52.687 UTC</dateModified>
+</layer>
