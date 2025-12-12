@@ -1,13 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+  
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/x-icon" href="https://openlayers.org/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Using OpenLayers with Vite</title>
+    <title>Cartographie Land Matrix</title>
   </head>
+
   <body>
+    <h1 id="title">Nombre d'échange et surface par pays</h1>
+    <button id="bouton">Bouton</button>
     <div id="map"></div>
+
+    <div id="Echelle" class="scale-line"></div>
+
+    <div id="layers" class="menu">
+      <input type="checkbox" id="checkbox-countries" name="checkbox-countries" checked />
+      <label for="checkbox-countries">Deals by countries</label>
+        <div id="layers2">
+        <input type="checkbox" id="checkbox-deals" name="checkbox-deals" checked />
+        <label for="checkbox-deals">Deals</label>
+        </div>
+    </div>
+    
+    <div id="attributes" class="menu">
+      <!-- Je crée une table -->
+      <table>
+    <!-- On utilise l’élément tr pour créer une ligne : tr = table row -->
+    <tr>
+    <!-- On utilise les éléments th (table header) pour créer les headers de nos trois colonnes -->
+    <th>Deal ID</th>
+    <th>Creation date</th>
+    <th>Country</th>
+    <th>Resources minéral</th>
+    </tr>
+    <!-- On utilise l’élément tr pour créer une AUTRE ligne : tr = table row -->
+    <tr>
+    <!-- On crée trois colonnes vides avec td -->
+    <td id="table-deal-id">…</td>
+    <td id="table-creation-date">…</td>
+    <td id="table-country">…</td>
+    <td id="table-resources-minéral">…</td>
+    </tr>
+    </table>
+    </div>
+
+    <!-- Radio button menu - production -->
+    <div id="production" class="menu">
+      <div>
+        <input type="radio" id="button-charbon" name="produce" value="charbon" />
+        <label for="charbon">Charbon</label>
+      </div>
+      <div>
+        <input type="radio" id="button-gold" name="produce" value="gold" />
+        <label for="gold">Or</label>
+      </div>
+      <div>
+        <input type="radio" id="button-silver" name="produce" value="silver" />
+        <label for="silver">Argent</label>
+      </div>
+      <div>
+        <input type="radio" id="button-lithium" name="produce" value="lithium" />
+        <label for="lithium">Lithium</label>
+      </div>
+      <div>
+        <input type="radio" id="button-cobalt" name="produce" value="cobalt" />
+        <label for="cobalt">cobalt</label>
+      </div>
+      <div>
+        <input type="radio" id="button-tous" name="produce" value="tous" />
+        <label for="tous">tous</label>
+      </div>
+    </div>
+
     <script type="module" src="./main.js"></script>
   </body>
 </html> 

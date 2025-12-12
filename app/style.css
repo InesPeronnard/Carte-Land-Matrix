@@ -6,7 +6,51 @@ html, body {
 }
 #map { 
   position: absolute;
-  top: 0;
+  top: 130px;
   bottom: 0;
   width: 100%;
+}
+
+.scale-line{
+  position: absolute;
+  top: 300px;
+  right: 20px;
+}
+#Echelle{
+  position: absolute;
+  top: 300px;
+}
+
+.menu {
+  /* Padding */
+  padding: 8px;
+
+  /* Dimensions minimales */
+  min-height: 80px;
+  min-width: 160px;
+
+  /* Rectangle blanc avec coins arrondis */
+  background-color: rgba(207, 207, 207, 0.575);
+  border-radius: 8px;
+}
+
+#layers {
+  /* Positionnement dans le body */
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+#attributes {
+  /* Positionnement dans le body */
+  position: absolute;
+  top: 800px;
+  width: 100%;
+}
+
+#production {
+  /* Positionnement dans le body */
+  position: absolute;
+  top: 160px;
+  right: 20px;
 }
